@@ -1,0 +1,26 @@
+
+* error running =mocha=
+#+begin_quote
+ozzloy@trent-reznor:~/app-academy/src/testing-demo$ mocha
+
+ Exception during run: Error [ERR_REQUIRE_ESM]: require() of ES Module /home/ozzloy/app-academy/src/testing-demo/node_modules/chai/chai.js from /home/ozzloy/app-academy/src/testing-demo/test/user-spec.js not supported.
+Instead change the require of chai.js in /home/ozzloy/app-academy/src/testing-demo/test/user-spec.js to a dynamic import() which is available in all CommonJS modules.
+    at Object.<anonymous> (/home/ozzloy/app-academy/src/testing-demo/test/user-spec.js:1:20)
+    at async formattedImport (/home/ozzloy/.config/nvm/versions/node/v18.20.4/lib/node_modules/mocha/lib/nodejs/esm-utils.js:9:14)
+    at async exports.requireOrImport (/home/ozzloy/.config/nvm/versions/node/v18.20.4/lib/node_modules/mocha/lib/nodejs/esm-utils.js:42:28)
+    at async exports.loadFilesAsync (/home/ozzloy/.config/nvm/versions/node/v18.20.4/lib/node_modules/mocha/lib/nodejs/esm-utils.js:100:20)
+    at async singleRun (/home/ozzloy/.config/nvm/versions/node/v18.20.4/lib/node_modules/mocha/lib/cli/run-helpers.js:158:3)
+    at async exports.handler (/home/ozzloy/.config/nvm/versions/node/v18.20.4/lib/node_modules/mocha/lib/cli/run.js:370:5) {
+  code: 'ERR_REQUIRE_ESM'
+}
+ozzloy@trent-reznor:~/app-academy/src/testing-demo$
+#+end_quote
+* after making this commit
+#+begin_quote
+ozzloy@trent-reznor:~/app-academy/src/testing-demo$ mocha
+
+
+  0 passing (0ms)
+
+ozzloy@trent-reznor:~/app-academy/src/testing-demo$
+#+end_quote

@@ -1,2 +1,2 @@
-const { expect } = require("chai");
-const User = require("../class/User.js");
+import { expect } from "chai";
+import User from "../class/user.js";
